@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cactus planner</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cactus.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Main heading</h1>
+      
+      <h1>Heading. Hello, Username!</h1>
     </header>
     <main>
       <section class="lists">
-        <h2>Мои списки</h2>
+        <h2>Cписки</h2>
         <ul class="current-lists">
           <li class="active-list">Задачи</li>
           <li>Ежедневные дела</li>
@@ -23,7 +31,7 @@
           <input
             type="text"
             class="new list"
-            placeholder="new list name"
+            placeholder="новый список"
             aria-label="new list name"
           />
           <button class="btn create" aria-label="create new list">+</button>
@@ -35,7 +43,7 @@
           <h2>Задачи</h2>
           <p class="tasks-qty">3 tasks remaining</p>
         </div>
-        <!-- todo-header -->
+        <!-- tasks-header -->
         <div class="tasks-body">
           <div class="tasks-current">
             <div class="task">
@@ -69,7 +77,7 @@
               <input
                 type="text"
                 class="new task"
-                placeholder="new task name"
+                placeholder="новая задача"
                 aria-label="new task name"
               />
               <button class="btn create" aria-label="create new task">+</button>
@@ -77,7 +85,7 @@
           </div>
           <!-- /.task-creation -->
           <div class="deletion-container">
-            <button class="btn delete">Удалить завершенную задачу</button>
+            <button class="btn delete">Удалить завершенные</button>
             <button class="btn delete">Удалить список</button>
           </div>
           <!-- /.deletion-container -->
