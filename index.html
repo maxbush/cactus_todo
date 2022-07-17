@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cactus planner</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cactus.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header>
-      
       <h1>Heading. Hello, Username!</h1>
     </header>
     <main>
       <section class="lists">
         <h2>Cписки</h2>
-        <ul class="current-lists">
-          <li class="active-list">Задачи</li>
+        <ul class="current-lists" data-lists>
+          <!-- <li class="active-list">Задачи</li>
           <li>Ежедневные дела</li>
-          <li>Привычки</li>
+          <li>Привычки</li> -->
         </ul>
-        <form action="">
+        <form action="" data-new-list-form>
           <input
             type="text"
+            data-new-list-input
             class="new list"
             placeholder="новый список"
             aria-label="new list name"
@@ -86,7 +86,9 @@
           <!-- /.task-creation -->
           <div class="deletion-container">
             <button class="btn delete">Удалить завершенные</button>
-            <button class="btn delete">Удалить список</button>
+            <button class="btn delete" data-delete-list-button>
+              Удалить список
+            </button>
           </div>
           <!-- /.deletion-container -->
         </div>
